@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <form>
+    <div class="first__column">
+      <div class="form__field">
+        <label for="text" class="form__label">Text</label>
+        <input type="text" id="text" name="text" class="form__input">
+      </div>
+      <div class="form__field">
+        <label for="number" class="form__label">Number</label>
+        <input type="number" id="number" name="number" class="form__input">
+      </div>
+      <div class="form__field">
+        <label for="email" class="form__label">Email</label>
+        <input type="email" id="email" name="email" class="form__input">
+      </div>
+      <div class="form__field">
+        <label for="required" class="form__label">Required</label>
+        <input type="text" id="required" name="required" class="form__input" required>
+      </div>
+      <div class="form__field">
+        <label for="disabled" class="form__label">Disabled</label>
+        <input type="text" id="disabled" name="disabled" class="form__input" disabled>
+      </div>
+      <div class="form__field">
+        <label for="password" class="form__label">Password</label>
+        <input type="password" id="password" name="password" class="form__input">
+      </div>
+      <div class="form__field">
+        <label for="textarea" class="form__label">Text Area</label>
+        <textarea id="textarea" name="textarea" class="form__input"></textarea>
+      </div>
+    </div>
+    <div class="second__column">
+      <div class="form__field">
+        <legend>Select Simple</legend>
+        <select name="select-simple" id="select-simple">
+          <option value="option-one">Option One</option>
+          <option value="otion-two">Option Two</option>
+          <option value="option-three">Option Three</option>
+          <option value="option-four">Option Four</option>
+          <option value="option-five">Option Five</option>
+        </select>
+      </div>
+      <div class="form__field">
+        <legend>Select Multiple</legend>
+        <select name="select-multiple" id="select-simple" multiple>
+          <option value="option-one">Option One</option>
+          <option value="otion-two">Option Two</option>
+          <option value="option-three">Option Three</option>
+          <option value="option-four">Option Four</option>
+          <option value="option-five">Option Five</option>
+        </select multiple>
+      </div>
+      <div class="radio__group">
+        <legend>Radio Group Label</legend>
+        <div class="radio">
+          <label for="option-one" class="form__label">Option One</label>
+          <input id="option-one" class="form__label" name="option-one" type="radio">
+        </div>
+
+        <div class="radio">
+          <label for="tuesday" class="form__label">Option Two</label>
+          <input id="option-two" class="form__label" name="option-one" type="radio">
+        </div>
+
+        <div class="radio">
+          <label for="option-three" class="form__label">Option Three</label>
+          <input id="option-three" class="form__label" name="option-one" type="radio">
+        </div>
+
+        <div class="radio">
+          <label for="option-four" class="form__label">Option Four</label>
+          <input id="option-four" class="form__label" name="option-one" type="radio">
+        </div>
+      </div>
+    </div>
+    <div class="third__column">
+      <div class="radio__group__custom">
+        <legend>Radio Group Custom</legend>
+        <div class="radio__custom">
+          <label for="monday" class="form__label">Monday</label>
+          <input id="monday" class="form__label" name="monday" type="radio">
+        </div>
+
+        <div class="radio__custom">
+          <label for="tuesday" class="form__label">Tuesday</label>
+          <input id="tuesday" class="form__label" name="monday" type="radio">
+        </div>
+
+        <div class="radio__custom">
+          <label for="wednesday" class="form__label">Wednesday</label>
+          <input id="wednesday" class="form__label" name="monday" type="radio">
+        </div>
+
+        <div class="radio__custom">
+          <label for="thursday" class="form__label">Thursday</label>
+          <input id="thursday" class="form__label" name="monday" type="radio">
+        </div>
+        <div class="radio__custom">
+          <label for="friday" class="form__label">Friday</label>
+          <input id="friday" class="form__label" name="monday" type="radio">
+        </div>
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>
