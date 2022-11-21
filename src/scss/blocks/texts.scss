@@ -1,1 +1,5 @@
+@use '../mixins/responsive.scss' as *;
 
+.header__text {
+    font-size: 2rem;
+}

@@ -8,115 +8,45 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- CAMBIAR POR styles.min.css al finalizar el proyecto -->
   <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://kit.fontawesome.com/8aa8e27ed0.js" crossorigin="anonymous"></script>
   <title>Document</title>
 </head>
 
 <body>
-  <form>
-    <div class="first__column">
-      <div class="form__field">
-        <label for="text" class="form__label">Text</label>
-        <input type="text" id="text" name="text" class="form__input">
-      </div>
-      <div class="form__field">
-        <label for="number" class="form__label">Number</label>
-        <input type="number" id="number" name="number" class="form__input">
-      </div>
-      <div class="form__field">
-        <label for="email" class="form__label">Email</label>
-        <input type="email" id="email" name="email" class="form__input">
-      </div>
-      <div class="form__field">
-        <label for="required" class="form__label">Required</label>
-        <input type="text" id="required" name="required" class="form__input" required>
-      </div>
-      <div class="form__field">
-        <label for="disabled" class="form__label">Disabled</label>
-        <input type="text" id="disabled" name="disabled" class="form__input" disabled>
-      </div>
-      <div class="form__field">
-        <label for="password" class="form__label">Password</label>
-        <input type="password" id="password" name="password" class="form__input">
-      </div>
-      <div class="form__field">
-        <label for="textarea" class="form__label">Text Area</label>
-        <textarea id="textarea" name="textarea" class="form__input"></textarea>
-      </div>
+  <header class="header">
+    <p class="header__text">FRONT-END WEB UI DISEÑO GRÁFICO</p>
+    <nav>
+      <ul id="menu" class="menu">
+        <li class="menu__item">
+          <a href="#" class="menu__link">Inicio</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Sobre mí</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Conocimientos y habilidades</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Proyectos</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="icons">
+    <i class="fa-solid fa-bars toggle__menu" id="toggle-menu"></i>
+    <div class="social">
+      <i class="fa-brands fa-linkedin-in linkedin__icon"></i>
+      <i class="fa-brands fa-github github__icon"></i>
     </div>
-    <div class="second__column">
-      <div class="form__field">
-        <legend>Select Simple</legend>
-        <select name="select-simple" id="select-simple">
-          <option value="option-one">Option One</option>
-          <option value="otion-two">Option Two</option>
-          <option value="option-three">Option Three</option>
-          <option value="option-four">Option Four</option>
-          <option value="option-five">Option Five</option>
-        </select>
-      </div>
-      <div class="form__field">
-        <legend>Select Multiple</legend>
-        <select name="select-multiple" id="select-simple" multiple>
-          <option value="option-one">Option One</option>
-          <option value="otion-two">Option Two</option>
-          <option value="option-three">Option Three</option>
-          <option value="option-four">Option Four</option>
-          <option value="option-five">Option Five</option>
-        </select multiple>
-      </div>
-      <div class="radio__group">
-        <legend>Radio Group Label</legend>
-        <div class="radio">
-          <label for="option-one" class="form__label">Option One</label>
-          <input id="option-one" class="form__label" name="option-one" type="radio">
-        </div>
-
-        <div class="radio">
-          <label for="tuesday" class="form__label">Option Two</label>
-          <input id="option-two" class="form__label" name="option-one" type="radio">
-        </div>
-
-        <div class="radio">
-          <label for="option-three" class="form__label">Option Three</label>
-          <input id="option-three" class="form__label" name="option-one" type="radio">
-        </div>
-
-        <div class="radio">
-          <label for="option-four" class="form__label">Option Four</label>
-          <input id="option-four" class="form__label" name="option-one" type="radio">
-        </div>
-      </div>
-    </div>
-    <div class="third__column">
-      <div class="radio__group__custom">
-        <legend>Radio Group Custom</legend>
-        <div class="radio__custom">
-          <label for="monday" class="form__label">Monday</label>
-          <input id="monday" class="form__label" name="monday" type="radio">
-        </div>
-
-        <div class="radio__custom">
-          <label for="tuesday" class="form__label">Tuesday</label>
-          <input id="tuesday" class="form__label" name="monday" type="radio">
-        </div>
-
-        <div class="radio__custom">
-          <label for="wednesday" class="form__label">Wednesday</label>
-          <input id="wednesday" class="form__label" name="monday" type="radio">
-        </div>
-
-        <div class="radio__custom">
-          <label for="thursday" class="form__label">Thursday</label>
-          <input id="thursday" class="form__label" name="monday" type="radio">
-        </div>
-        <div class="radio__custom">
-          <label for="friday" class="form__label">Friday</label>
-          <input id="friday" class="form__label" name="monday" type="radio">
-        </div>
-      </div>
-    </div>
-  </form>
+  </div>
+  <main class="main"></main>
+  <script src="js/scripts.js"></script>
+  <footer class="footer"></footer>
 </body>
 
 </html>
