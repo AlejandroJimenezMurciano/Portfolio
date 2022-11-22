@@ -1,0 +1,36 @@
+@use '../functions/image.scss' as *;
+@use '../mixins/responsive.scss' as *;
+
+.about-me {
+    width: 260px;
+    margin: 20px 30px;
+    position: relative;
+    left: 46px;
+
+    @include responsive (laptop) {
+        display: flex;
+        align-items: start;
+        max-width: 100%;
+    }
+
+    &__name {
+        transform: rotate(-90deg);
+        white-space: nowrap;
+        position: absolute;
+        top: 362px;
+        width: 773px;
+        right: -107px;
+
+    }
+
+    &__description {
+        padding: 15px 15px 31px;
+
+    }
+
+    &__image {
+        @include responsive (laptop) {
+            width: 300px;
+        }
+    }
+}

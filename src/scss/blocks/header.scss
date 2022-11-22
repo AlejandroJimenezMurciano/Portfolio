@@ -1,9 +1,8 @@
 @use '../mixins/responsive.scss' as *;
 
 .header {
-    padding-top: 100px;
     max-width: 100%;
-    height: 300px;
+    height: 330px;
     background-color: var(--primary-color);
 }
 
@@ -41,18 +40,23 @@
 
 .icons {
     cursor: pointer;
-    width: 40px;
     height: 300px;
     position: fixed;
-    top: 0;
-    right: 0;
+    top: 20px;
+    right: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+}
+
+i {
+    font-size: 30px;
+    color: white
 }
 
 .social {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 1rem;
 }
