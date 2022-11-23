@@ -10,10 +10,18 @@
     @include responsive (laptop) {
         display: flex;
         align-items: start;
-        max-width: 100%;
+        width: 1000px;
+        height: 500px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
     }
 
     &__name {
+        background-color: var(--h1-color);
+        align-items: center;
+        text-align: center;
         transform: rotate(-90deg);
         white-space: nowrap;
         position: absolute;
@@ -21,16 +29,35 @@
         width: 773px;
         right: -107px;
 
+        @include responsive (laptop) {
+            height: 46px;
+            width: 500px;
+            position: absolute;
+            left: -273px;
+            top: 226px;
+        }
     }
 
     &__description {
+        background-color: var(--description-color);
         padding: 15px 15px 31px;
 
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+
+        @include responsive (laptop) {
+            width: 500px;
+            height: 500px;
+            padding: 0 70px;
+            line-height: 25px;
+
+        }
     }
 
     &__image {
         @include responsive (laptop) {
-            width: 300px;
+            width: 500px;
         }
     }
 }

@@ -20,15 +20,8 @@
     &--margin {
         margin-bottom: 0;
     }
-}
 
-.about-me__name {
-    background-color: var(--h1-color);
-    align-items: center;
-    text-align: center;
-}
-
-.about-me__description {
-    background-color: var(--description-color);
-    color: white;
+    &--description {
+        color: white;
+    }
 }

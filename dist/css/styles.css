@@ -389,15 +389,7 @@ a {
 .text--margin {
   margin-bottom: 0;
 }
-
-.about-me__name {
-  background-color: var(--h1-color);
-  align-items: center;
-  text-align: center;
-}
-
-.about-me__description {
-  background-color: var(--description-color);
+.text--description {
   color: white;
 }
 
@@ -470,10 +462,18 @@ i {
   .about-me {
     display: flex;
     align-items: start;
-    max-width: 100%;
+    width: 1000px;
+    height: 500px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
   }
 }
 .about-me__name {
+  background-color: var(--h1-color);
+  align-items: center;
+  text-align: center;
   transform: rotate(-90deg);
   white-space: nowrap;
   position: absolute;
@@ -481,11 +481,32 @@ i {
   width: 773px;
   right: -107px;
 }
+@media screen and (min-width: 1024px) {
+  .about-me__name {
+    height: 46px;
+    width: 500px;
+    position: absolute;
+    left: -273px;
+    top: 226px;
+  }
+}
 .about-me__description {
+  background-color: var(--description-color);
   padding: 15px 15px 31px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+@media screen and (min-width: 1024px) {
+  .about-me__description {
+    width: 500px;
+    height: 500px;
+    padding: 0 70px;
+    line-height: 25px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .about-me__image {
-    width: 300px;
+    width: 500px;
   }
 }
