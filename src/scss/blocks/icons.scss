@@ -1,0 +1,27 @@
+@use '../mixins/responsive.scss' as *;
+
+.icons {
+    cursor: pointer;
+    height: 300px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.header__icon {
+    font-size: 30px;
+    color: white
+}
+
+.skills__icon {
+    font-size: 80px;
+}
+
+.icon__bem {
+    width: 80px;
+    height: 80px;
+}

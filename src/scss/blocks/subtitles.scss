@@ -1,0 +1,13 @@
+@use '../mixins/responsive.scss' as *;
+
+.subtitle {
+    padding-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+
+    @include responsive (laptop) {
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

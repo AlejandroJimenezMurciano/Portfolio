@@ -16,6 +16,7 @@
 </head>
 
 <body>
+
   <header class="header">
     <h2 class="title">FRONT-END WEB <span class="display-block">UI</span> DISEÑO GRÁFICO</h2>
     <nav>
@@ -38,35 +39,88 @@
       </ul>
     </nav>
   </header>
+
   <div class="icons">
-    <i class="fa-solid fa-bars toggle__menu" id="toggle-menu"></i>
+    <i class="fa-solid fa-bars toggle__menu header__icon" id="toggle-menu"></i>
     <div class="social">
-      <i class="fa-brands fa-linkedin-in linkedin__icon"></i>
-      <i class="fa-brands fa-github github__icon"></i>
+      <i class="fa-brands fa-linkedin-in header__icon"></i>
+      <i class="fa-brands fa-github header__icon"></i>
     </div>
   </div>
-  <div class="about-me">
-    <div class="about-me__name">
-      <h1 class="text text--vertical">ALEJANDRO JIMÉNEZ MURCIANO</h1>
+
+  <article class="about-me">
+    <div class="about-me__subtitle">
+      <h2 class="subtitle">Sobre mí</h2>
     </div>
-    <img class="about-me__image" src="./assets/images/alejandrojimenezmurciano.jpeg"
-      alt="alejandrojimenezmurcianopicture" />
-    <div class="about-me__description">
-      <p class="text text--description">
-        Hola!
-        <span class="display-block">Me llamo Alejandro,</span>
-        Estudié la carrera de Marketing porque me gustaba el mundo teconológico/empresarial y todo lo relacionado con la
-        creatividad pese a haber realizado previamente un bachillerato tecnológico.
-      </p>
-      <p class="text text--description text--margin">Desde muy pequeño estuve interesado por el mundo del arte y la
-        ilustración
-        expresando mi creatividad a través de
-        distintas obras y es por eso que posteriormente a mis estudios universitarios decidí complementarlos con lo que
-        más me apasionaba: la programación, el diseño web y el diseño gráfico.</p>
+    <div class="about-me__flex">
+      <div class="about-me__name">
+        <h1 class="text text--vertical">ALEJANDRO JIMÉNEZ MURCIANO</h1>
+      </div>
+      <img class="about-me__image" src="./assets/images/alejandrojimenezmurciano.jpeg"
+        alt="alejandrojimenezmurcianopicture" />
+      <div class="about-me__description">
+        <p class="text text--description">
+          Hola!
+          <span class="display-block">Me llamo Alejandro,</span>
+          Estudié la carrera de Marketing porque me gustaba el mundo teconológico/empresarial y todo lo relacionado con
+          la
+          creatividad pese a haber realizado previamente un bachillerato tecnológico.
+        </p>
+        <p class="text text--description text--margin">Desde muy pequeño estuve interesado por el mundo del arte y la
+          ilustración
+          expresando mi creatividad a través de
+          distintas obras y es por eso que posteriormente a mis estudios universitarios decidí complementarlos con lo
+          que
+          más me apasionaba: la programación, el diseño web y el diseño gráfico.</p>
+      </div>
+    </div>
+  </article>
+
+  <article class="skills">
+    <div class="skilss__subtitle">
+      <h2 class="subtitle subtitle--h2">Conocimientos y habilidades
+      </h2>
+    </div>
+    <div class="skills__icons">
+
+      <div class="skills__content">
+        <i class="fa-brands fa-html5 skills__icon"></i>
+        <h3 class="skills__h3">HTML</h3>
+      </div>
+
+      <div class="skills__content">
+        <i class="fa-brands fa-js skills__icon"></i>
+        <h3 class="skills__h3">JAVA SCRIPT</h3>
+      </div>
+
+      <div class="skills__content">
+        <i class="fa-brands fa-css3-alt skills__icon"></i>
+        <h3 class="skills__h3">CSS</h3>
+      </div>
+
+      <div class="skills__content">
+        <i class="fa-brands fa-square-git skills__icon"></i>
+        <h3 class="skilss__h3">GIT</h3>
+      </div>
+
+      <div class="skilss__content">
+        <i class="fa-brands fa-sass skills__icon"></i>
+        <h3 class="skills__h3">SASS</h3>
+      </div>
+
+      <div class="skilss__content">
+        <svg viewBox="0 0 101.7 84" width="32" height="32" class="opacity-80 astro-5SOCBQWG icon__bem" astro-icon="b_">
+          <path
+            d="M0 13h23.8v7H0zM0 0h23.8v7H0zm42.7 25.9H0v7h41.1c4.5 0 15 .1 18.9 6.4v-3.9c-1.9-6.2-7.5-9.5-17.3-9.5zm.1 13H0v7h41.1c10 0 16.3.4 18.9 1.8v-3.1c-2-4.9-10.4-5.7-17.2-5.7zm-.1 33H0v-7h41.1c4.5 0 15-.1 18.9-6.4v3.9c-1.9 6.2-7.5 9.5-17.3 9.5zm.1-13H0v-7h41.1c10 0 16.3-.4 18.9-1.8v3.1c-2 4.9-10.4 5.7-17.2 5.7zM70.4 84h31.4v-4.3H71.3c-2.7 0-9.1-.1-11.4-3.8v2.4C61 82 64.4 84 70.4 84zm-.1-7.9h31.4v-4.3H71.3c-6.1 0-9.9-.2-11.4-1.1v1.9c1.2 3 6.3 3.5 10.4 3.5z">
+          </path>
+        </svg>
+        <h3 class="skills__h3">BEM</h3>
+      </div>
 
     </div>
-  </div>
-  <script src="js/scripts.js"></script>
+  </article>
+  <script src="js/scripts.js">
+  </script>
   <footer class="footer"></footer>
 </body>
 

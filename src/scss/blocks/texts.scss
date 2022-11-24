@@ -1,14 +1,5 @@
 @use '../mixins/responsive.scss' as *;
 
-.title {
-    padding-top: 0.75rem;
-    padding-left: 1.5rem;
-    font-size: 3rem;
-    text-align: start;
-    font-family: 'Squada One';
-    color: var(--banner-title-color);
-}
-
 .display-block {
     display: block;
 }
@@ -24,4 +15,5 @@
     &--description {
         color: white;
     }
+
 }

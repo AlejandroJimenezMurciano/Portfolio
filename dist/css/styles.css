@@ -429,22 +429,6 @@ a {
   }
 }
 
-.icons {
-  cursor: pointer;
-  height: 300px;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-i {
-  font-size: 30px;
-  color: white;
-}
-
 .social {
   display: flex;
   flex-direction: column;
@@ -452,14 +436,21 @@ i {
 }
 
 /* ESTILOS DEL FOOTER */
-.about-me {
+@media screen and (min-width: 1024px) {
+  .about-me {
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.about-me__flex {
   width: 260px;
-  margin: 20px 30px;
+  margin: 0px 30px;
   position: relative;
   left: 46px;
 }
 @media screen and (min-width: 1024px) {
-  .about-me {
+  .about-me__flex {
     display: flex;
     align-items: start;
     width: 1000px;
@@ -477,17 +468,17 @@ i {
   transform: rotate(-90deg);
   white-space: nowrap;
   position: absolute;
-  top: 362px;
-  width: 773px;
-  right: -107px;
+  top: 370px;
+  width: 789px;
+  right: -115px;
 }
 @media screen and (min-width: 1024px) {
   .about-me__name {
     height: 46px;
-    width: 500px;
+    width: 505px;
     position: absolute;
-    left: -273px;
-    top: 226px;
+    left: -275px;
+    top: 227px;
   }
 }
 .about-me__description {
@@ -509,4 +500,67 @@ i {
   .about-me__image {
     width: 500px;
   }
+}
+
+@media screen and (min-width: 1024px) {
+  .skills {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+.skills__icons {
+  text-align: center;
+  background-color: var(--primary-color);
+  width: 300px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .skills__icons {
+    grid-template-columns: repeat(6, 1fr);
+    width: 100%;
+    height: 300px;
+  }
+}
+
+.subtitle {
+  padding-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 5px;
+}
+@media screen and (min-width: 1024px) {
+  .subtitle {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.icons {
+  cursor: pointer;
+  height: 300px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__icon {
+  font-size: 30px;
+  color: white;
+}
+
+.skills__icon {
+  font-size: 80px;
+}
+
+.icon__bem {
+  width: 80px;
+  height: 80px;
 }
