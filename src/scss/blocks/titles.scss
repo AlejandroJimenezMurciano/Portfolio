@@ -1,10 +1,17 @@
 @use '../mixins/responsive.scss' as *;
 
 .title {
-    padding-top: 0.75rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 3.75rem;
     padding-left: 1.5rem;
     font-size: 3rem;
     text-align: start;
     font-family: 'Squada One';
     color: var(--banner-title-color);
+    
+    @include responsive (laptop){
+        font-size: 5rem;
+        padding-top: 2rem;
+    }
 }

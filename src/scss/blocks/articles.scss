@@ -34,15 +34,15 @@
         transform: rotate(-90deg);
         white-space: nowrap;
         position: absolute;
-        top: 370px;
-        width: 789px;
-        right: -115px;
+        top: 369px;
+        width: 777px;
+        right: -109px;
 
         @include responsive (laptop) {
             height: 46px;
-            width: 505px;
+            width: 500px;
             position: absolute;
-            left: -275px;
+            left: -270px;
             top: 227px;
         }
     }
@@ -74,8 +74,8 @@
 .skills {
 
     @include responsive(laptop) {
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 400px;
+        padding-right: 400px;
     }
 
     &__icons {
