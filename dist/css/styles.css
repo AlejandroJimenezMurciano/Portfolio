@@ -482,6 +482,7 @@ a {
   top: 369px;
   width: 777px;
   right: -109px;
+  overflow: hidden;
 }
 @media screen and (min-width: 1024px) {
   .about-me__name {
@@ -490,6 +491,16 @@ a {
     position: absolute;
     left: -270px;
     top: 227px;
+  }
+}
+.about-me__infinite-text {
+  width: 400px;
+  text-shadow: 400px 0, 800px 0;
+  animation: move-text 3s linear infinite;
+}
+@keyframes move-text {
+  to {
+    transform: translateX(-100%);
   }
 }
 .about-me__description {
@@ -515,8 +526,11 @@ a {
 
 @media screen and (min-width: 1024px) {
   .skills {
-    padding-left: 400px;
-    padding-right: 400px;
+    position: relative;
+    left: 26px;
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .skills__icons {
@@ -552,6 +566,8 @@ a {
 }
 
 .icons {
+  position: relative;
+  z-index: 100;
   cursor: pointer;
   height: 300px;
   position: fixed;

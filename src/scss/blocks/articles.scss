@@ -27,6 +27,8 @@
         }
     }
 
+
+
     &__name {
         background-color: var(--h1-color);
         align-items: center;
@@ -37,6 +39,8 @@
         top: 369px;
         width: 777px;
         right: -109px;
+        overflow: hidden;
+
 
         @include responsive (laptop) {
             height: 46px;
@@ -44,6 +48,18 @@
             position: absolute;
             left: -270px;
             top: 227px;
+        }
+    }
+
+    &__infinite-text {
+        width: 400px;
+        text-shadow: 400px 0, 800px 0;
+        animation: move-text 3s linear infinite;
+
+        @keyframes move-text {
+            to {
+                transform: translateX(-100%);
+            }
         }
     }
 
@@ -74,8 +90,12 @@
 .skills {
 
     @include responsive(laptop) {
-        padding-left: 400px;
-        padding-right: 400px;
+        position: relative;
+        left: 26px;
+        width: 1050px;
+        margin-left: auto;
+        margin-right: auto;
+
     }
 
     &__icons {
