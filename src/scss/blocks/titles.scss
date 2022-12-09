@@ -14,4 +14,9 @@
         font-size: 5rem;
         padding-top: 2rem;
     }
+
+    @include responsive (tablet) {
+        font-size: 4rem;
+        padding-top: 3rem;
+    }
 }

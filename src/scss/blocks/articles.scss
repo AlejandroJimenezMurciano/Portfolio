@@ -9,6 +9,7 @@
         margin-right: auto;
     }
 
+
     &__flex {
         width: 260px;
         margin: 0px 30px;
@@ -25,6 +26,18 @@
             margin-right: auto;
             position: relative;
         }
+
+        @include responsive (tablet) {
+            display: flex;
+            align-items: start;
+            width: 800px;
+            height: 350px;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+
 
     }
 
@@ -77,12 +90,24 @@
             padding: 0 70px;
             line-height: 25px;
         }
+
+        @include responsive (tablet) {
+            width: 350px;
+            height: 350px;
+            padding: 0 70px;
+            line-height: 25px;
+        }
     }
 
     &__image {
         @include responsive (laptop) {
             width: 500px;
         }
+
+        @include responsive (tablet) {
+            width: 350px;
+        }
+
     }
 }
 
@@ -94,7 +119,6 @@
         width: 1050px;
         margin-left: auto;
         margin-right: auto;
-
     }
 
     &__icons {
