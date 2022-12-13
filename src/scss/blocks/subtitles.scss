@@ -5,14 +5,21 @@
     margin-left: 30px;
     margin-bottom: 5px;
 
+
     @include responsive (laptop) {
         width: 1000px;
         margin-left: auto;
         margin-right: auto;
     }
+
+    &--h2 {
+        @include responsive (laptop) {
+            margin-left: 0;
+        }
+    }
 }
 
-.form__subtitle{
+.form__subtitle {
     width: 250px;
     margin-left: auto;
     margin-right: auto;

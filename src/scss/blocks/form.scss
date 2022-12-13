@@ -1,20 +1,26 @@
 @use '../mixins/responsive.scss' as *;
 
-.form{
-  
+.form {
 
-    &__container{
+
+    &__container {
         display: flex;
         flex-direction: column;
-        gap:1rem;
-        padding:  1rem;
+        gap: 1rem;
+        padding: 1rem;
         align-items: start;
-        background-color:var( --background-form);
+        background-color: var(--background-form);
         width: 300px;
         height: 400px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 80px;
+
+        @include responsive (tablet) {
+            gap: 1.5rem;
+            width: 400px;
+            height: 458px;
+        }
 
         @include responsive(laptop) {
             position: relative;
@@ -22,11 +28,11 @@
             width: 600px;
             margin-left: auto;
             margin-right: auto;
-    
+
         }
     }
 
-    &__field{
+    &__field {
         display: flex;
         flex-direction: column;
         width: 250px;
@@ -37,19 +43,20 @@
         @include responsive(laptop) {
             width: 500px;
         }
-        
+
     }
 
 }
 
 
-.button{
-   
-    &__container{
-        width: 150px;
-        height: 40px;
-        text-align: center;
-        padding-top: 50px;
-        background-color:var(--background-button);
-    }
+.send-button {
+    width: 150px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 30px;
+    background-color: var(--background-button);
+    color: white;
+    cursor: pointer;
 }
