@@ -7,17 +7,21 @@
     height: 300px;
     position: fixed;
     top: 20px;
-    right: 20px;
+    left: 330px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 12rem;
 
+    @include responsive (laptop) {
+        left: 1000px;
+    }
+
 }
 
 .header__icon {
     font-size: 30px;
-    color: white
+    color: rgb(0, 0, 0);
 }
 
 .skills__icon {
