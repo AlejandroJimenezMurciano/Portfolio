@@ -402,7 +402,7 @@ a {
   margin-bottom: 0;
 }
 .text--description {
-  color: grey;
+  color: rgb(0, 0, 0);
 }
 
 .header {
@@ -588,6 +588,20 @@ a {
 .projects__container {
   position: relative;
 }
+.projects__link {
+  background-color: rgb(40, 133, 102);
+  border-radius: 10px;
+}
+.projects__infinite-text {
+  width: 400px;
+  text-shadow: 400px 0, 800px 0;
+  animation: move-text 3s linear infinite;
+}
+@keyframes move-text {
+  to {
+    transform: translateX(-100%);
+  }
+}
 
 .subtitle {
   padding-top: 20px;
@@ -616,11 +630,10 @@ a {
 }
 
 .icons {
-  position: relative;
+  position: absolute;
   z-index: 100;
   cursor: pointer;
   height: 300px;
-  position: fixed;
   top: 20px;
   left: 330px;
   display: flex;

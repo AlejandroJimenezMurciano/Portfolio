@@ -1,11 +1,10 @@
 @use '../mixins/responsive.scss' as *;
 
 .icons {
-    position: relative;
+    position: absolute;
     z-index: 100;
     cursor: pointer;
     height: 300px;
-    position: fixed;
     top: 20px;
     left: 330px;
     display: flex;
