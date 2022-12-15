@@ -6,15 +6,11 @@
     cursor: pointer;
     height: 300px;
     top: 20px;
-    left: 330px;
+    right: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 12rem;
-
-    @include responsive (laptop) {
-        left: 1000px;
-    }
 
 }
 

@@ -14,11 +14,8 @@ const moveSlide = () => {
 
 const nextSlide = () => {
 
-    console.log('next')
-    console.log(counter)
-    console.log(translate)
 
-    if (counter >= allSliderItems.length - 2) {
+    if (counter > allSliderItems.length - 2) {
         counter = 0;
         translate = 0
     }
@@ -28,6 +25,7 @@ const nextSlide = () => {
     }
 
     moveSlide()
+    console.log(100 * translate * -1 + '%')
 }
 
 const prevSlide = () => {

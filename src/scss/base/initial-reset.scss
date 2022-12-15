@@ -2,11 +2,11 @@
 *::after,
 *::before {
     box-sizing: border-box;
-    border: solid red 1px;
+    outline: solid red 1px;
 }
 
 img {
-    //max-width: 100%;
+    max-width: 100%;
     display: block;
 }
 

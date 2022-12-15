@@ -46,8 +46,21 @@
 
     }
 
+    &__input {
+        background: none;
+        border: none;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        resize: none;
+    }
+
+    &__label {
+        color: white;
+    }
 }
 
+.text--white {
+    color: white
+}
 
 .send-button {
     width: 150px;

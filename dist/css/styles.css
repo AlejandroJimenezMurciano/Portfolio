@@ -340,10 +340,11 @@ template {
 *::after,
 *::before {
   box-sizing: border-box;
-  border: solid red 1px;
+  outline: solid red 1px;
 }
 
 img {
+  max-width: 100%;
   display: block;
 }
 
@@ -368,8 +369,8 @@ a {
   --description-color: hsl(202, 100%, 89%, 1);
   --background-projects: hsl(0, 100%, 76%, 100%);
   --background-form: hsl(25, 100%, 67%, 100%);
-  --background-button: hsl(223, 100%, 68%,100%);
-  --slider-translate: 0;
+  --background-button: hsl(223, 100%, 68%, 100%);
+  --slider-translate: 0%;
 }
 
 /* Variables SASS */
@@ -432,6 +433,7 @@ a {
 }
 
 .header {
+  position: relative;
   width: 100%;
   height: 350px;
   background-color: var(--primary-color);
@@ -482,9 +484,9 @@ a {
   transform: rotate(-90deg);
   white-space: nowrap;
   position: absolute;
-  top: 369px;
-  width: 786px;
-  right: -113px;
+  top: 368px;
+  width: 775px;
+  right: -107px;
   overflow: hidden;
 }
 @media screen and (min-width: 640px) {
@@ -585,24 +587,26 @@ a {
 }
 
 .projects__descriptions {
-  width: 260px;
-  height: 400px;
-  margin: 0px 30px;
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 30px;
   position: relative;
-  left: 48px;
-  background-color: var(--background-projects);
+  margin-left: auto;
+  margin-right: auto;
   flex-shrink: 0;
+  overflow: hidden;
+  height: 400px;
 }
 .projects__name {
-  background-color: var(--h1-projects-color);
+  background-color: var(--h1-name-color);
   align-items: center;
   text-align: center;
   transform: rotate(-90deg);
   white-space: nowrap;
   position: absolute;
-  top: 180px;
-  width: 400px;
-  right: 117px;
+  top: 184px;
+  width: 398px;
+  right: 122px;
   overflow: hidden;
 }
 .projects__flex {
@@ -614,8 +618,9 @@ a {
   position: relative;
 }
 .projects__link {
+  position: absolute;
+  bottom: 10px;
   background-color: rgb(40, 133, 102);
-  border-radius: 10px;
 }
 .projects__infinite-text {
   width: 400px;
@@ -628,6 +633,22 @@ a {
   }
 }
 
+.slider-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid #fff;
+  overflow: hidden;
+}
+
+.web--link {
+  left: 90px;
+}
+
+.github--link {
+  right: 50px;
+}
+
 /* ESTILOS DEL FOOTER */
 .icons {
   position: absolute;
@@ -635,16 +656,11 @@ a {
   cursor: pointer;
   height: 300px;
   top: 20px;
-  left: 330px;
+  right: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 12rem;
-}
-@media screen and (min-width: 1024px) {
-  .icons {
-    left: 1000px;
-  }
 }
 
 .header__icon {
@@ -716,6 +732,19 @@ a {
     width: 500px;
   }
 }
+.form__input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  resize: none;
+}
+.form__label {
+  color: white;
+}
+
+.text--white {
+  color: white;
+}
 
 .send-button {
   width: 150px;
@@ -734,9 +763,10 @@ a {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  padding-top: 50px;
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 350px;
   display: flex;
@@ -756,9 +786,4 @@ a {
 }
 .menu--show {
   transform: translateY(0);
-}
-@media screen and (min-width: 1024px) {
-  .menu {
-    display: none;
-  }
 }

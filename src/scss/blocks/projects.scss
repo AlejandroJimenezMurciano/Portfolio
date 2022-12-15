@@ -4,25 +4,27 @@
 .projects {
 
     &__descriptions {
-        width: 260px;
-        height: 400px;
-        margin: 0px 30px;
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 30px;
         position: relative;
-        left: 48px;
-        background-color: var(--background-projects);
+        margin-left: auto;
+        margin-right: auto;
         flex-shrink: 0;
+        overflow: hidden;
+        height: 400px;
     }
 
     &__name {
-        background-color: var(--h1-projects-color);
+        background-color: var(--h1-name-color);
         align-items: center;
         text-align: center;
         transform: rotate(-90deg);
         white-space: nowrap;
         position: absolute;
-        top: 180px;
-        width: 400px;
-        right: 117px;
+        top: 184px;
+        width: 398px;
+        right: 122px;
         overflow: hidden;
     }
 
@@ -30,7 +32,7 @@
         display: flex;
         transform: translateX(var(--slider-translate));
         transition: transform .5s;
-        // overflow: hidden;
+
     }
 
     &__container {
@@ -38,8 +40,10 @@
     }
 
     &__link {
+        position: absolute;
+        bottom: 10px;
         background-color: rgb(40, 133, 102);
-        border-radius: 10px;
+
     }
 
     &__infinite-text {
@@ -53,5 +57,21 @@
             }
         }
     }
+
 }
 
+.slider-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid #fff;
+    overflow: hidden;
+}
+
+.web--link {
+    left: 90px
+}
+
+.github--link {
+    right: 50px;
+}
