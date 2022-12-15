@@ -1,0 +1,57 @@
+@use '../functions/image.scss' as *;
+@use '../mixins/responsive.scss' as *;
+
+.projects {
+
+    &__descriptions {
+        width: 260px;
+        height: 400px;
+        margin: 0px 30px;
+        position: relative;
+        left: 48px;
+        background-color: var(--background-projects);
+        flex-shrink: 0;
+    }
+
+    &__name {
+        background-color: var(--h1-projects-color);
+        align-items: center;
+        text-align: center;
+        transform: rotate(-90deg);
+        white-space: nowrap;
+        position: absolute;
+        top: 180px;
+        width: 400px;
+        right: 117px;
+        overflow: hidden;
+    }
+
+    &__flex {
+        display: flex;
+        transform: translateX(var(--slider-translate));
+        transition: transform .5s;
+        // overflow: hidden;
+    }
+
+    &__container {
+        position: relative;
+    }
+
+    &__link {
+        background-color: rgb(40, 133, 102);
+        border-radius: 10px;
+    }
+
+    &__infinite-text {
+        width: 400px;
+        text-shadow: 400px 0, 800px 0;
+        animation: move-text 3s linear infinite;
+
+        @keyframes move-text {
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    }
+}
+

@@ -373,6 +373,21 @@ a {
 }
 
 /* Variables SASS */
+.display-block {
+  display: block;
+}
+
+.text {
+  font-size: 1rem;
+  font-family: "Libre Baskerville";
+}
+.text--margin {
+  margin-bottom: 0;
+}
+.text--description {
+  color: rgb(0, 0, 0);
+}
+
 .title {
   margin-top: 0;
   margin-bottom: 0;
@@ -390,19 +405,30 @@ a {
   }
 }
 
-.display-block {
-  display: block;
+.subtitle {
+  padding-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 5px;
+}
+@media screen and (min-width: 1024px) {
+  .subtitle {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .subtitle--h2 {
+    margin-left: 0;
+  }
 }
 
-.text {
-  font-size: 1rem;
-  font-family: "Libre Baskerville";
-}
-.text--margin {
-  margin-bottom: 0;
-}
-.text--description {
-  color: rgb(0, 0, 0);
+.form__subtitle {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-bottom: 0.5rem;
 }
 
 .header {
@@ -417,7 +443,6 @@ a {
   gap: 1rem;
 }
 
-/* ESTILOS DEL FOOTER */
 @media screen and (min-width: 640px) {
   .about-me {
     width: 700px;
@@ -603,32 +628,7 @@ a {
   }
 }
 
-.subtitle {
-  padding-top: 20px;
-  margin-left: 30px;
-  margin-bottom: 5px;
-}
-@media screen and (min-width: 1024px) {
-  .subtitle {
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .subtitle--h2 {
-    margin-left: 0;
-  }
-}
-
-.form__subtitle {
-  width: 250px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  padding-bottom: 0.5rem;
-}
-
+/* ESTILOS DEL FOOTER */
 .icons {
   position: absolute;
   z-index: 100;
