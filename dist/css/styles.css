@@ -365,11 +365,13 @@ a {
   --primary-color: hsl(343, 100%, 89%);
   --banner-title-color: hsl(0, 100%, 76%);
   --h1-name-color: hsl(115, 100%, 90%, 1);
+  --h1-projects: hsl(292,100%,90%,100%);
   --h1-projects-color: hsl(292, 100%, 90%, 100%);
   --description-color: hsl(202, 100%, 89%, 1);
-  --background-projects: hsl(0, 100%, 76%, 100%);
   --background-form: hsl(25, 100%, 67%, 100%);
   --background-button: hsl(223, 100%, 68%, 100%);
+  --background-skills: hsl(173,100%,89%,100%);
+  --projects-links: hsl(274, 100%, 68%, 1);
   --slider-translate: 0%;
 }
 
@@ -485,8 +487,8 @@ a {
   white-space: nowrap;
   position: absolute;
   top: 368px;
-  width: 775px;
-  right: -107px;
+  width: 776.28px;
+  right: -108px;
   overflow: hidden;
 }
 @media screen and (min-width: 640px) {
@@ -538,7 +540,7 @@ a {
   }
 }
 .about-me__image {
-  width: 258px;
+  width: 267px;
 }
 @media screen and (min-width: 640px) {
   .about-me__image {
@@ -562,7 +564,7 @@ a {
 }
 .skills__icons {
   text-align: center;
-  background-color: var(--primary-color);
+  background-color: var(--banner-title-color);
   width: 300px;
   height: 500px;
   margin-left: auto;
@@ -598,15 +600,15 @@ a {
   height: 400px;
 }
 .projects__name {
-  background-color: var(--h1-name-color);
+  background-color: var(--h1-projects-color);
   align-items: center;
   text-align: center;
   transform: rotate(-90deg);
   white-space: nowrap;
   position: absolute;
   top: 184px;
-  width: 398px;
-  right: 122px;
+  width: 400px;
+  right: 121px;
   overflow: hidden;
 }
 .projects__flex {
@@ -619,8 +621,12 @@ a {
 }
 .projects__link {
   position: absolute;
-  bottom: 10px;
-  background-color: rgb(40, 133, 102);
+  bottom: 28px;
+  padding: 0.5rem;
+  border-radius: 50px;
+  background-color: var(--projects-links);
+  cursor: pointer;
+  color: white;
 }
 .projects__infinite-text {
   width: 400px;
@@ -642,11 +648,20 @@ a {
 }
 
 .web--link {
-  left: 90px;
+  left: 80px;
 }
 
 .github--link {
-  right: 50px;
+  right: 40px;
+}
+
+.blur {
+  position: absolute;
+  right: 30px;
+  bottom: 0px;
+  width: 267px;
+  height: 91px;
+  backdrop-filter: blur(20px);
 }
 
 /* ESTILOS DEL FOOTER */
@@ -665,7 +680,7 @@ a {
 
 .header__icon {
   font-size: 30px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .skills__icon {
@@ -743,7 +758,7 @@ a {
 }
 
 .text--white {
-  color: white;
+  color: rgb(31, 28, 28);
 }
 
 .send-button {
@@ -763,7 +778,7 @@ a {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-  padding-top: 50px;
+  padding-top: 60px;
   position: absolute;
   top: 0;
   right: 0;

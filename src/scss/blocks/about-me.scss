@@ -42,8 +42,8 @@
         white-space: nowrap;
         position: absolute;
         top: 368px;
-        width: 775px;
-        right: -107px;
+        width: 776.28px;
+        right: -108px;
         overflow: hidden;
 
         @include responsive (tablet) {
@@ -97,7 +97,7 @@
     }
 
     &__image {
-        width: 258px;
+        width: 267px;
 
         @include responsive (tablet) {
             width: 500px;
