@@ -21,15 +21,21 @@
         position: relative;
         left: 46px;
 
-        @include responsive (laptop) {
-            width: 1000px;
-            height: 500px;
-            display: flex;
+        @include responsive (tablet) {
+            width: 500px;
+            height: 1000px;
             align-items: start;
             align-items: center;
             margin-left: auto;
             margin-right: auto;
             position: relative;
+        }
+
+        @include responsive (laptop) {
+            width: 1000px;
+            height: 500px;
+            display: flex;
+
         }
 
     }
@@ -41,16 +47,15 @@
         transform: rotate(-90deg);
         white-space: nowrap;
         position: absolute;
-        top: 368px;
+        top: 368.5px;
         width: 776.28px;
         right: -108px;
         overflow: hidden;
 
         @include responsive (tablet) {
-            position: absolute;
-            top: 478px;
+            top: 480px;
             width: 1000px;
-            right: -225px;
+            right: 20px;
         }
 
 

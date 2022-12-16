@@ -10,6 +10,11 @@
     font-family: 'Squada One';
     color: var(--banner-title-color);
 
+    @include responsive (tablet) {
+        font-size: 4.5rem;
+        padding-top: 3.25rem;
+    }
+
     @include responsive (laptop) {
         font-size: 5rem;
         padding-top: 2rem;

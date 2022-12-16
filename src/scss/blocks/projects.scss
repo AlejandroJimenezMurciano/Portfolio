@@ -24,7 +24,7 @@
         position: absolute;
         top: 184px;
         width: 400px;
-        right: 121px;
+        left: -146px;
         overflow: hidden;
     }
 
@@ -42,11 +42,11 @@
     &__link {
         position: absolute;
         bottom: 28px;
-        padding:0.5rem;
+        padding: 0.5rem;
         border-radius: 50px;
         background-color: var(--projects-links);
-        cursor:pointer;
-        color:white
+        cursor: pointer;
+        color: white
     }
 
     &__infinite-text {
@@ -76,14 +76,18 @@
 }
 
 .github--link {
-    right: 40px;
+    left: 220px;
 }
 
-.blur{
+.blur__container {
+    position: relative;
+}
+
+.blur {
     position: absolute;
-    right: 30px;
+    left: 0;
     bottom: 0px;
-    width: 267px;
-    height: 91px;
+    width: 100%;
+    height: 110px;
     backdrop-filter: blur(20px);
 }
