@@ -22,23 +22,25 @@
     <nav>
       <ul id="menu" class="menu">
         <li class="menu__item">
-          <a href="#" class="menu__link">Sobre mí</a>
+          <a href="#about-me" class="menu__link">Sobre mí</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Conocimientos y habilidades</a>
+          <a href="#skills" class="menu__link">Conocimientos y habilidades</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Proyectos</a>
+          <a href="#projects" class="menu__link">Proyectos</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Contacto</a>
+          <a href="#contact" class="menu__link">Contacto</a>
         </li>
       </ul>
     </nav>
   </header>
 
   <div class="icons">
-    <i class="fa-solid fa-bars toggle__menu header__icon" id="toggle-menu"></i>
+    <div id ="icon__menu" class="icon__menu">
+      <div id="barras" class="icon__menu-bar"></div>
+    </div>
     <div class="social">
       <i class="fa-brands fa-linkedin-in header__icon"
         href="https://www.linkedin.com/in/alejandro-jim%C3%A9nez-murciano-430090206/"></i>
@@ -46,7 +48,7 @@
     </div>
   </div>
 
-  <article class="about-me">
+  <article id="about-me" class="about-me">
     <div class="about-me__subtitle">
       <h2 class="subtitle">Sobre mí</h2>
     </div>
@@ -74,7 +76,7 @@
     </div>
   </article>
 
-  <article class="skills">
+  <article id="skills" class="skills">
     <div class="skilss__subtitle">
       <h2 class="subtitle subtitle--h2">Conocimientos y habilidades
       </h2>
@@ -118,7 +120,7 @@
     </div>
   </article>
 
-  <article class="projects">
+  <article id="projects" class="projects">
     <div class="projects__subtitle">
       <h2 class="subtitle">Proyectos</h2>
     </div>
@@ -242,7 +244,7 @@
     </div>
   </article>
   <script src="js/scripts.js"></script>
-  <form>
+  <form id="contact">
     <div class="form__container">
 
       <div class="form__subtitle">

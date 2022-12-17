@@ -1,9 +1,15 @@
 const toggleMenuElement = document.getElementById('toggle-menu');
 const menuElement = document.getElementById('menu');
+const iconMenuElement = document.getElementById('icon__menu');
+const barrasElement = document.getElementById('barras');
 const rightArrowElement = document.getElementById('arrow-icon-right');
 const leftArrowElement = document.getElementById('arrow-icon-left');
 const allSliderItems = document.querySelectorAll('.projects__descriptions')
 const rootStyles = document.documentElement.style
+
+const cambiarbarras = () => { 
+    barrasElement.classList.toggle('javascript') 
+}
 
 let counter = 0;
 let translate = 0;
@@ -41,9 +47,9 @@ const prevSlide = () => {
     moveSlide()
 }
 
+iconMenuElement.addEventListener('click', cambiarbarras)
 
-
-toggleMenuElement.addEventListener('click', () => {
+iconMenuElement.addEventListener('click', () => {
     menuElement.classList.toggle('menu--show');
 });
 
