@@ -3,6 +3,8 @@
 
 .about-me {
 
+    overflow: hidden;
+
     @include responsive (tablet) {
         width: 700px;
         height: 1077px;

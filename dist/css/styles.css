@@ -453,6 +453,9 @@ a {
   gap: 1rem;
 }
 
+.about-me {
+  overflow: hidden;
+}
 @media screen and (min-width: 640px) {
   .about-me {
     width: 700px;
