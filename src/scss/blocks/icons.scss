@@ -36,15 +36,30 @@
 .arrow__icon {
     position: absolute;
     z-index: 10;
+    cursor: pointer;
+    font-size: 30px;
+
+    @include responsive (laptop){
+        font-size:40px;
+    }
+    
 
     &--left {
-        left: 15px;
+        left: 10px;
         top: 200px;
+
+        @include responsive (laptop){
+            left: 220px;
+        }
     }
 
     &--right {
         top: 200px;
-        right: 15px;
+        right: 10px;
+
+        @include responsive (laptop){
+            right: 160px;
+        }
     }
 }
 

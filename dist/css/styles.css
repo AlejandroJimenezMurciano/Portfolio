@@ -363,6 +363,7 @@ a {
   /* Variables CSS */
   --primary-color: hsl(343, 100%, 89%);
   --banner-title-color: hsl(0, 100%, 76%);
+  --menu-background: hsl(230,99%,72%,100%);
   --h1-name-color: hsl(115, 100%, 90%, 1);
   --h1-projects: hsl(292,100%,90%,100%);
   --h1-projects-color: hsl(292, 100%, 90%, 100%);
@@ -609,6 +610,12 @@ a {
   overflow: hidden;
   height: 400px;
 }
+@media screen and (min-width: 1024px) {
+  .projects__descriptions {
+    padding-left: 300px;
+    padding-right: 200px;
+  }
+}
 .projects__name {
   background-color: var(--h1-projects-color);
   align-items: center;
@@ -620,6 +627,11 @@ a {
   width: 400px;
   left: -146px;
   overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+  .projects__name {
+    left: 83px;
+  }
 }
 .projects__flex {
   display: flex;
@@ -637,6 +649,11 @@ a {
   background-color: var(--projects-links);
   cursor: pointer;
   color: white;
+}
+@media screen and (min-width: 1024px) {
+  .projects__link {
+    padding: 1rem;
+  }
 }
 .projects__infinite-text {
   width: 400px;
@@ -660,9 +677,19 @@ a {
 .web--link {
   left: 80px;
 }
+@media screen and (min-width: 1024px) {
+  .web--link {
+    left: 600px;
+  }
+}
 
 .github--link {
   left: 220px;
+}
+@media screen and (min-width: 1024px) {
+  .github--link {
+    left: 860px;
+  }
 }
 
 .blur__container {
@@ -715,14 +742,31 @@ a {
 .arrow__icon {
   position: absolute;
   z-index: 10;
+  cursor: pointer;
+  font-size: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .arrow__icon {
+    font-size: 40px;
+  }
 }
 .arrow__icon--left {
-  left: 15px;
+  left: 10px;
   top: 200px;
+}
+@media screen and (min-width: 1024px) {
+  .arrow__icon--left {
+    left: 220px;
+  }
 }
 .arrow__icon--right {
   top: 200px;
-  right: 15px;
+  right: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .arrow__icon--right {
+    right: 160px;
+  }
 }
 
 .icon__menu {
@@ -856,7 +900,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(255, 249, 159);
+  background-color: var(--menu-background);
   transform: translateY(-100%);
   transition: 1s;
   z-index: 1;
@@ -865,7 +909,7 @@ a {
   padding: 1rem;
 }
 .menu__item__link {
-  color: white;
+  background-color: rgb(255, 255, 255);
   text-decoration: none;
 }
 .menu--show {

@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(255, 249, 159);
+    background-color: var(--menu-background);
     transform: translateY(-100%);
     transition: 1s;
     z-index: 1;
@@ -24,7 +24,7 @@
         padding: 1rem;
 
         &__link {
-            color: white;
+            background-color: rgb(255, 255, 255);
             text-decoration: none;
         }
     }
