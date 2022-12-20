@@ -340,6 +340,7 @@ template {
 *::after,
 *::before {
   box-sizing: border-box;
+  outline: solid red 1px;
 }
 
 img {
@@ -363,14 +364,14 @@ a {
   /* Variables CSS */
   --primary-color: hsl(343, 100%, 89%);
   --banner-title-color: hsl(0, 100%, 76%);
-  --menu-background: hsl(230,99%,72%,100%);
+  --menu-background: hsl(320, 13%, 57%, 100%);
   --h1-name-color: hsl(115, 100%, 90%, 1);
-  --h1-projects: hsl(292,100%,90%,100%);
-  --h1-projects-color: hsl(292, 100%, 90%, 100%);
+  --h1-projects: hsl(292, 100%, 90%, 100%);
+  --h1-projects-color: hsl(256, 100%, 77%, 100%);
   --description-color: hsl(202, 100%, 89%, 1);
   --background-form: hsl(25, 100%, 67%, 100%);
   --background-button: hsl(223, 100%, 68%, 100%);
-  --background-skills: hsl(173,100%,89%,100%);
+  --background-skills: hsl(173, 100%, 89%, 100%);
   --projects-links: hsl(274, 100%, 68%, 1);
   --slider-translate: 0%;
 }
@@ -570,8 +571,8 @@ a {
 @media screen and (min-width: 1024px) {
   .skills {
     position: relative;
-    left: 26px;
-    width: 1050px;
+    left: 15px;
+    width: 1020px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -602,6 +603,13 @@ a {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .projects {
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .projects__descriptions {
   width: 100%;
   padding-left: 70px;
@@ -615,8 +623,8 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .projects__descriptions {
-    padding-left: 300px;
-    padding-right: 200px;
+    padding-left: 60px;
+    padding-right: 0px;
   }
 }
 .projects__name {
@@ -627,13 +635,15 @@ a {
   white-space: nowrap;
   position: absolute;
   top: 184px;
-  width: 400px;
-  left: -146px;
+  width: 407.03px;
+  left: -159px;
   overflow: hidden;
 }
 @media screen and (min-width: 1024px) {
   .projects__name {
-    left: 83px;
+    top: 184px;
+    width: 400.03px;
+    left: -156px;
   }
 }
 .projects__flex {
@@ -682,7 +692,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .web--link {
-    left: 600px;
+    left: 368px;
   }
 }
 
@@ -691,7 +701,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .github--link {
-    left: 860px;
+    left: 573px;
   }
 }
 
@@ -759,7 +769,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .arrow__icon--left {
-    left: 220px;
+    left: -25px;
   }
 }
 .arrow__icon--right {
@@ -768,7 +778,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .arrow__icon--right {
-    right: 160px;
+    right: -40px;
   }
 }
 
@@ -908,12 +918,12 @@ a {
   transition: 1s;
   z-index: 1;
 }
+.menu__link {
+  color: white;
+  text-decoration: none;
+}
 .menu__item {
   padding: 1rem;
-}
-.menu__item__link {
-  background-color: rgb(255, 255, 255);
-  text-decoration: none;
 }
 .menu--show {
   transform: translateY(0);
